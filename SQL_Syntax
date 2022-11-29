@@ -251,6 +251,10 @@ COMMON TABLE EXPRESSIONS
 
 # CTEs = temporary table that you create at the top of your SQL query. 
 # It doesn't get saved anywhere and is only created as a reference for the SQL that immediately follows it.
+# CTE's give you:
+  1) Multiple Aggregations
+  2) Readability
+  3) Multiple Uses within a Query
 
 WITH tempTable AS (
   SELECT
