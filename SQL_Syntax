@@ -252,4 +252,23 @@ COMMON TABLE EXPRESSIONS
 # CTEs = temporary table that you create at the top of your SQL query. 
 # It doesn't get saved anywhere and is only created as a reference for the SQL that immediately follows it.
 
+WITH tempTable AS (
+  SELECT
+  column_1, column_2
+  FROM table
+  WHERE column IN ('condition_1', 'condition_2')
+)
+
+SELECT column_n from tempTable 
+
+SAMPLE: 
+
+WITH tempTable AS (
+  SELECT
+  EmployeeID, Jobtitle
+  FROM employee_table
+  WHERE LastName IN ('Smith','Jurup','Washington')
+)
+
+SELECT Jobtitle from tempTable 
 
