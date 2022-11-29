@@ -20,6 +20,12 @@ SELECT column1, column2
 FROM table_name 
 WHERE condition
 
+# FILTERING WITH "WHERE" BY DATE 
+
+SELECT column
+FROM table_name
+WHERE date_column between 'MM/DD/YY AND 'MM/DD/YY'
+
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
 AND
@@ -57,7 +63,7 @@ TESTING FOR NULL VALUES
 
 SELECT column_names 
 FROM table_name 
-WHERE column_name IS NULL;
+column_name IS NULL;
 
 SELECT column_names 
 FROM table_name 
