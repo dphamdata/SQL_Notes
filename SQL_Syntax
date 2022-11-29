@@ -244,3 +244,12 @@ A view contains rows and columns, just like a real table. The fields in a view a
 
 CREATE VIEW view_name AS SELECT column1, column2
 FROM table_name WHERE condition;
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+COMMON TABLE EXPRESSIONS 
+
+# CTEs = temporary table that you create at the top of your SQL query. 
+# It doesn't get saved anywhere and is only created as a reference for the SQL that immediately follows it.
+
+
