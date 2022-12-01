@@ -276,3 +276,14 @@ WITH tempTable AS (
 
 SELECT Jobtitle from tempTable 
 
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Windows Functions
+
+SELECT column_1, column_2,
+aggregation(selected_column) OVER (PARTITION BY column AS alias 
+FROM Table 
+
+SELECT street, safetyrating,
+AVG(safetyrating) OVER (PARTITION BY street) as "Average_safety_rating"
+FROM CityBikeLanes
